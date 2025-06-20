@@ -1,11 +1,70 @@
- <html lang="en">
- <head>
- </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrey Rodchenko | PhD Research Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #63308c;
+      color: #fff;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+    nav a {
+      color: #bbb;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h1, h2 {
+      font-weight: 600;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #eee;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
  <body>
-    <div id="content">
+    <header>
+    <h1>Andrey Rodchenko</h1>
+    <p>PhD Research Profile</p>
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#publications">Publications</a>
+        <a href="#software">Software</a>
+    </nav>
+    </header>
+    <main class="container">
         <!--  YOUR CONTENT STARTS HERE  -->
-        <div class="section">
-            <h1>Andrey Rodchenko</h1>
+        <section id="summary">
+            <h2>Summary</h2>
             <img align="left" src="photo.jpg" style="width:106px;height:150px;margin-right:25px;margin-top:1px;"/>
             <br/>
             <p>
@@ -22,6 +81,7 @@
                 <a href="https://www.researchgate.net/profile/Andrey_Rodchenko" target="_blank">https://www.researchgate.net/profile/Andrey_Rodchenko</a>
                 <br/>
             </p>
+            <br/>
             <p>
                 Andrey was a PhD student in the
                 <a href="https://www.cs.manchester.ac.uk" target="_blank">School of Computer Science</a>
@@ -39,6 +99,8 @@
                          His research interests are compilers, binary translation, runtime systems, computer architecture, and HW/SW co-design.
             </p>
             <br/>
+        </section>
+        <section id="publications">
             <h2>Publications</h2>
             <p>
                 <b>Type Information Elimination from Objects on Architectures with Tagged Pointers Support.</b>
@@ -103,6 +165,8 @@
                 </b>
             </p>
             <br/>
+        </section>
+        <section id="software">
             <h2>Software</h2>
             <p>
                 <b>
@@ -128,6 +192,6 @@
                 <br/>
                  Andrey was an active contributor to this project in 2014-2017. Specifically, he improved utilization of the Graal optimising compiler by the Maxine VM resulting in 1.64x speedup on the DaCapo benchmarks and better overall stability.
             </p>
-        </div>
-    </div>
+        </section>
+    </main>
 </body>
